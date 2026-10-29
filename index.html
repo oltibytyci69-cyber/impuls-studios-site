@@ -174,5 +174,19 @@
       <button class="media-close" type="button" data-close-media aria-label="Mbyll median">×</button>
       <div id="media-view"></div>
     </dialog>
+    <script>
+      if (/(?:^#|[&#])(?:invite_token|recovery_token|confirmation_token|email_change_token)=/.test(window.location.hash)) {
+        const identityScript = document.createElement("script");
+        identityScript.src = "https://identity.netlify.com/v1/netlify-identity-widget.js";
+        identityScript.onload = () => {
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("login", () => {
+              window.location.replace("/admin/");
+            });
+          }
+        };
+        document.head.append(identityScript);
+      }
+    </script>
   </body>
 </html>
