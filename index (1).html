@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Impuls Studios — Agjenci kreative e marketingut në Kosovë</title>
+<meta name="description" content="Strategji kreative, përmbajtje dhe zgjidhje digjitale që i ndihmojnë bizneset të dallohen dhe të rriten.">
+<meta property="og:title" content="Impuls Studios">
+<meta property="og:description" content="Strategji kreative, përmbajtje dhe zgjidhje digjitale që i ndihmojnë bizneset të dallohen dhe të rriten.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101B32'/%3E%3Cpath d='M24 18q0-5 5-2l17 12q4 4 0 8L29 48q-5 3-5-2z' fill='%23347FE0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--iv:#F7F6F2;--wh:#fff;--pb:#EAF2FF;--gr:#E9ECF1;--nv:#101B32;--md:#626B7A;--bl:#347FE0;--bd:#1F5FBF;--e:cubic-bezier(.2,.8,.2,1);--df:'Bricolage Grotesque','Arial Narrow',Arial,sans-serif;--px:clamp(1.2rem,5vw,5rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{font:400 1.05rem/1.65 'Hanken Grotesk',system-ui,sans-serif;color:var(--nv);background:var(--iv);overflow-x:hidden}
+body:has(dialog[open]){overflow:hidden}
+a{color:inherit}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;text-align:left}
+:focus-visible{outline:3px solid var(--bl);outline-offset:3px}
+.skip{position:absolute;left:1rem;top:-4rem;background:var(--nv);color:#fff;padding:.6rem 1rem;z-index:100}.skip:focus{top:1rem}
+#nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;gap:1.6rem;padding:calc(1.1rem + env(safe-area-inset-top,0px)) var(--px) 1.1rem;transition:background .4s,padding .4s,box-shadow .4s}
+#nav.sc{background:#f7f6f2d9;backdrop-filter:blur(14px);padding-top:calc(.6rem + env(safe-area-inset-top,0px));padding-bottom:.6rem;box-shadow:0 1px 0 #101b3218}
+.logo{background:var(--nv);border-radius:12px;padding:.45rem .85rem;display:flex;align-items:center;text-decoration:none;margin-right:auto}
+.logo img{height:34px;width:auto;display:block}
+.fb{color:#fff;font:800 1.05rem var(--df);letter-spacing:-.02em}.fb em{display:block;font:600 .55rem 'Hanken Grotesk';letter-spacing:.5em;color:var(--bl);font-style:normal}
+#nav nav{display:flex;gap:1.7rem}
+#nav nav a{text-decoration:none;font-weight:500;font-size:.95rem;position:relative;padding:.3rem 0}
+#nav nav a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--bl);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--e)}
+#nav nav a:hover::after,#nav nav a.on::after{transform:scaleX(1);transform-origin:left}
+.lg{display:flex;border:1px solid #101b3233;border-radius:99px;padding:2px}
+.lg button{padding:.25rem .65rem;border-radius:99px;font-size:.8rem;font-weight:700}
+.lg [aria-pressed=true]{background:var(--nv);color:#fff}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:.7rem;background:var(--bd);color:#fff;font-weight:700;text-decoration:none;padding:.95rem 1.5rem;border-radius:99px;isolation:isolate}
+.btn::before{content:'';position:absolute;inset:0;background:var(--nv);transform:translateY(101%);transition:transform .5s var(--e);z-index:-1}
+.btn:hover::before,.btn:focus-visible::before{transform:none}
+.btn i{width:.6em;height:.6em;border:solid currentColor;border-width:2px 2px 0 0;transform:rotate(45deg);transition:transform .4s var(--e)}
+.btn:hover i{transform:translateX(.35em) rotate(45deg)}
+.btn.sm{padding:.6rem 1.1rem;font-size:.9rem}.btn.wh{background:#fff;color:var(--nv)}.btn.wh::before{background:var(--bl)}
+#bg{display:none;width:44px;height:44px;position:relative}
+#bg i{position:absolute;left:11px;right:11px;height:2px;background:var(--nv);transition:transform .4s var(--e)}
+#bg i:first-child{top:18px}#bg i:last-child{top:25px}
+#bg[aria-expanded=true] i:first-child{transform:translateY(3.5px) rotate(45deg)}
+#bg[aria-expanded=true] i:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+#menu{position:fixed;inset:0;z-index:49;background:var(--pb);padding:6.5rem var(--px) 2rem;display:flex;flex-direction:column;gap:.4rem;clip-path:circle(0 at calc(100% - 2.6rem) 2.6rem);visibility:hidden;transition:clip-path .7s var(--e),visibility 0s .7s;overflow:auto}
+#menu.o{clip-path:circle(150% at calc(100% - 2.6rem) 2.6rem);visibility:visible;transition:clip-path .7s var(--e),visibility 0s}
+#menu a.big{font:800 clamp(2.4rem,11vw,4rem)/1.1 var(--df);letter-spacing:-.04em;text-decoration:none}
+#menu .lg{align-self:flex-start;margin:1.2rem 0}#menu .btn{align-self:flex-start}
+.hero{position:relative;min-height:100svh;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);align-items:center;gap:2rem;padding:8rem var(--px) 5rem;background:radial-gradient(55% 60% at 78% 42%,var(--pb),transparent 72%),var(--iv);overflow:hidden}
+h1{font:800 clamp(3rem,9.6vw,8.6rem)/.9 var(--df);letter-spacing:-.045em}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding:.04em .02em .12em}
+.w i{display:inline-block;font-style:normal;transform:translateY(110%);transition:transform 1s var(--e) calc(var(--d)*90ms + .1s)}
+.go .w i{transform:none}.w .em{font-style:italic;color:var(--bl);font-weight:500}
+.lead{max-width:34ch;margin:1.8rem 0 2rem;font-size:clamp(1.05rem,1.6vw,1.3rem);color:var(--md)}
+.acts{display:flex;gap:1.6rem;align-items:center;flex-wrap:wrap}
+.lnk{font-weight:700;text-decoration:none;background:linear-gradient(var(--bl),var(--bl)) 0 100%/0 2px no-repeat;transition:background-size .5s var(--e);padding-bottom:.2rem}.lnk:hover{background-size:100% 2px}
+.hv{position:relative;aspect-ratio:1;width:100%;max-width:520px;justify-self:center}
+.hv>*{position:absolute;transform:translate(calc(var(--mx,0)*var(--k)*1px),calc(var(--my,0)*var(--k)*1px));transition:transform .4s var(--e)}
+.hv svg{inset:0;width:100%;height:100%;--k:-14}
+.dr1{stroke-dasharray:1;animation:dw 2.2s var(--e) both}@keyframes dw{from{stroke-dashoffset:1}}
+.spin{transform-box:view-box;transform-origin:50% 50%;animation:sp 18s linear infinite}.spin.r{animation-duration:30s;animation-direction:reverse}@keyframes sp{to{transform:rotate(360deg)}}
+.pl{transform-box:fill-box;transform-origin:center;animation:pu 3s ease-in-out infinite}@keyframes pu{50%{transform:scale(1.06)}}
+.fl{padding:.55rem 1rem;background:#fff;border:1px solid #101b3220;border-radius:99px;font-weight:600;font-size:.9rem;box-shadow:0 10px 30px -12px #101b3240;animation:bob 6s ease-in-out infinite}@keyframes bob{50%{margin-top:-12px}}
+.scr{position:absolute;left:var(--px);bottom:1.6rem;display:flex;align-items:center;gap:.8rem;text-decoration:none;font-size:.8rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.scr span{width:2px;height:44px;background:#101b3233;position:relative;overflow:hidden}
+.scr span::after{content:'';position:absolute;inset:0;background:var(--bl);animation:dn 2s var(--e) infinite}@keyframes dn{from{transform:translateY(-100%)}to{transform:translateY(100%)}}
+.tick{background:var(--bd);color:#fff;overflow:hidden;white-space:nowrap;padding:1rem 0;transform:rotate(-1.2deg) scale(1.03);position:relative;z-index:5;margin-bottom:-1rem}
+.tk{display:inline-flex;gap:2.5rem;font:700 1.5rem var(--df);animation:mq 45s linear infinite}@keyframes mq{to{transform:translateX(-50%)}}
+.tk span::after{content:'';display:inline-block;margin-left:2.5rem;border-left:.7em solid var(--pb);border-block:.4em solid transparent}
+.wrap{max-width:1440px;margin:auto;padding:0 var(--px);position:relative}
+.sec{position:relative;padding:clamp(5rem,11vw,9rem) 0 calc(clamp(5rem,11vw,9rem) + 3rem)}
+.sheet{border-radius:3rem 3rem 0 0;margin-top:-3rem}
+.mask{clip-path:inset(0 0 100% 0);transform:translateY(40%);transition:clip-path 1.1s var(--e),transform 1.1s var(--e)}.mask.in{clip-path:inset(-15% -5%);transform:none}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s var(--e)}.rv.in{opacity:1;transform:none}
+.dr{height:1px;background:#101b3233;transform:scaleX(0);transform-origin:left;transition:transform 1.4s var(--e)}.dr.in{transform:none}
+h2{font:800 clamp(2.6rem,7.4vw,6.6rem)/.95 var(--df);letter-spacing:-.04em}
+.about{padding-top:calc(clamp(5rem,11vw,9rem) + 2rem)}
+.about h2{max-width:11ch;position:relative;z-index:1;font-size:clamp(3rem,10vw,9.5rem)}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:3rem;position:relative;z-index:1}
+.ab div{grid-column:2}.ab p{margin-top:1.5rem;font-size:clamp(1.1rem,1.7vw,1.4rem);max-width:46ch}
+.sym{position:absolute;right:-6%;top:6%;width:min(52vw,640px);pointer-events:none}
+.svcs{background:var(--pb);z-index:2}
+.sh{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end;margin-bottom:4rem}.sh p{color:var(--md);font-size:1.15rem;max-width:44ch}
+.svc{border-top:1px solid #101b3226;position:relative}.svc:last-child{border-bottom:1px solid #101b3226}
+.svc::after{content:'';position:absolute;left:0;right:0;top:-1px;height:3px;background:var(--bl);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--e)}
+.svc:hover::after,.svc.open::after{transform:scaleX(1)}
+.svc h3{font:inherit}
+.svc button{display:grid;grid-template-columns:3.5rem 1fr 2rem;gap:1rem;width:100%;padding:1.5rem 0;align-items:baseline}
+.svc b{font:700 1rem var(--df);color:var(--bd)}
+.svc span{font:700 clamp(1.5rem,4.2vw,3.6rem)/1.05 var(--df);letter-spacing:-.03em;transition:transform .5s var(--e),color .3s}
+.svc:hover span,.svc.open span{transform:translateX(1rem);color:var(--bd)}
+.svc u{width:1.4rem;height:1.4rem;position:relative;transition:transform .5s var(--e)}
+.svc u::before,.svc u::after{content:'';position:absolute;left:0;right:0;top:50%;height:2px;background:currentColor}.svc u::after{transform:rotate(90deg)}
+.svc.open u{transform:rotate(45deg)}
+.pn{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--e)}.open .pn{grid-template-rows:1fr}
+.pn>div{overflow:hidden;visibility:hidden;padding-left:4.5rem}.open .pn>div{visibility:visible}
+.pn p{padding-bottom:1.8rem;max-width:56ch;color:var(--md);font-size:1.15rem}
+.work{background:var(--wh);z-index:3}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1.4rem;align-items:start;margin-top:4rem}
+.pj{grid-column:span 4}.pj:nth-child(5n+1){grid-column:span 7}.pj:nth-child(5n+2){grid-column:span 5;margin-top:5rem}.pj:nth-child(5n+4){margin-top:3rem}
+.im{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--gr);border-radius:4px;transition:border-radius .6s var(--e)}.pj:nth-child(5n+1) .im{aspect-ratio:16/11}
+.pj:hover .im,.pj:focus-visible .im{border-radius:2.2rem 4px 2.2rem 4px}
+.im img,.ph{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s var(--e)}.pj:hover img{transform:scale(1.07)}
+.ph{background:linear-gradient(135deg,var(--pb),#c6dcfa);min-height:200px}
+.pj b{display:block;margin-top:.8rem;font:700 .9rem var(--df);color:var(--bd)}
+.pj h3{font:700 clamp(1.3rem,2.2vw,1.9rem)/1.1 var(--df);letter-spacing:-.02em}
+.pj small{display:block;color:var(--md);font-size:.95rem;transition:transform .5s var(--e)}.pj:hover small{transform:translateX(.5rem)}
+.dm{position:absolute;left:.6rem;top:.6rem;background:var(--nv);color:#fff;font:700 .7rem sans-serif;padding:.2rem .5rem;font-style:normal;z-index:1}
+.empty{grid-column:1/-1;border:1.5px dashed #101b3240;border-radius:2rem;padding:clamp(2rem,6vw,5rem);display:grid;gap:1.5rem;justify-items:start}.empty p{font:600 clamp(1.3rem,3vw,2rem)/1.2 var(--df);max-width:30ch}
+dialog{border:0;border-radius:1.5rem;width:min(1100px,94vw);max-height:92vh;background:var(--iv);color:var(--nv);margin:auto;overflow:auto}
+dialog::backdrop{background:#101b3299;backdrop-filter:blur(4px)}dialog[open]{animation:dg .5s var(--e)}@keyframes dg{from{opacity:0;transform:translateY(30px) scale(.97)}}
+.dw{position:relative}.mb{display:grid;grid-template-columns:1.3fr 1fr}
+.mm img,.mm video,.mm .ph{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.ths{display:flex;gap:.5rem;padding:.6rem;flex-wrap:wrap}.th{width:64px;height:64px;padding:0;border-radius:8px;overflow:hidden}.th img{width:100%;height:100%;object-fit:cover;display:block}
+.mt{padding:2.4rem 2rem}.mt h3{font:800 clamp(1.8rem,3.5vw,3rem)/1 var(--df);letter-spacing:-.03em;margin:.4rem 0 1rem}.mt small{color:var(--bd);font-weight:700}
+.ctl{display:flex;gap:.6rem;margin-top:2rem}
+.x{position:absolute;right:.8rem;top:.8rem;width:44px;height:44px;border-radius:50%;background:#fff;z-index:2;font-size:1.6rem;text-align:center;line-height:44px;box-shadow:0 4px 14px #101b3230}
+.ct{background:var(--nv);color:#fff;overflow:hidden;z-index:4}
+.ct h2{font-size:clamp(2.8rem,9vw,8.4rem);max-width:12ch;position:relative;z-index:1}
+.orb{position:absolute;right:-12vw;top:-8vw;width:min(60vw,720px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--bl),var(--bd) 70%);animation:pu 6s ease-in-out infinite}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:3rem;position:relative;z-index:1;align-items:start}
+.dir p{color:#cbd5e6;max-width:40ch;font-size:1.2rem;margin-bottom:2rem}.dir a.l{display:block;font:700 clamp(1.1rem,2vw,1.6rem) var(--df);margin-top:1rem;word-break:break-all;text-decoration-color:var(--bl);text-underline-offset:.3em}
+.fm{background:var(--wh);color:var(--nv);border-radius:1.6rem;padding:clamp(1.4rem,3vw,2.4rem);display:grid;gap:1rem}.fm h3{font:700 1.4rem var(--df)}
+.fm label{font-weight:600;font-size:.9rem;display:grid;gap:.3rem}
+.fm input,.fm textarea{font:inherit;padding:.8rem 1rem;border:1.5px solid #101b3233;border-radius:12px;background:var(--iv);width:100%}
+.fm input:focus,.fm textarea:focus{border-color:var(--bl);outline:3px solid #347fe040;outline-offset:0}.fm [aria-invalid=true]{border-color:#b3261e}
+.er{color:#b3261e;font-weight:500}
+fieldset{border:0;display:flex;flex-wrap:wrap;gap:.5rem}legend{font-weight:600;font-size:.9rem;margin-bottom:.4rem}
+.fm label.ck{position:relative;display:block;font-weight:500}.ck input{position:absolute;opacity:0;width:1px}
+.ck span{display:inline-block;padding:.45rem .9rem;border:1.5px solid #101b3233;border-radius:99px;font-size:.88rem;cursor:pointer;transition:.3s}
+.ck input:checked+span{background:var(--bd);color:#fff;border-color:var(--bd)}.ck input:focus-visible+span{outline:3px solid var(--bl);outline-offset:2px}
+.hp{position:absolute;left:-9999px}#st{font-weight:600}#st.ok{color:#1a7f4b}#st.err{color:#b3261e}
+.ft{margin-top:5rem;padding-top:1.5rem;border-top:1px solid #ffffff2e;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:#aab6cb;font-size:.9rem;position:relative;z-index:1}
+#idx{position:fixed;right:var(--px);bottom:calc(1.2rem + env(safe-area-inset-bottom,0px));z-index:40;font:700 .8rem var(--df);color:var(--nv);background:#fffc;backdrop-filter:blur(8px);padding:.4rem .8rem;border-radius:99px;border:1px solid #101b3220}
+.rail{position:fixed;left:0;top:0;width:3px;height:100%;background:var(--bl);transform:scaleY(0);transform-origin:top;z-index:60}
+#cur{position:fixed;left:0;top:0;z-index:99;pointer-events:none;opacity:0;transition:opacity .3s}#cur.v{opacity:1}
+#cur i{display:grid;place-items:center;width:12px;height:12px;margin:-6px;border-radius:50%;background:var(--bl);color:#fff;font:700 0 'Hanken Grotesk';font-style:normal;transition:all .35s var(--e)}
+#cur.on i{width:92px;height:92px;margin:-46px;font-size:.78rem}
+@media(max-width:900px){#nav nav,#nav .lg,#nav .btn{display:none}#bg{display:block}
+.hero{grid-template-columns:1fr;padding-top:7rem}.hv{max-width:320px}.scr,#idx{display:none}
+.sh,.ab,.cg,.mb{grid-template-columns:1fr}.ab div{grid-column:1}.sym{width:80vw;right:-25%;top:2%}
+.grid>.pj:nth-child(n){grid-column:1/-1;margin-top:0}.pn>div{padding-left:0}.sh{gap:1.2rem}.mt{padding:1.6rem 1.2rem}}
+@media(prefers-reduced-motion:reduce){*,::before,::after{animation:none!important;transition-duration:.01ms!important;transition-delay:0s!important;scroll-behavior:auto!important}
+.w i{transform:none}.mask{clip-path:none;transform:none}.rv{opacity:1;transform:none}.dr{transform:none}.hv>*{transform:none}}
+</style>
+</head>
+<body>
+<div class="rail" id="rail"></div>
+<div id="cur" aria-hidden="true"><i></i></div>
+<a class="skip" href="#about" data-t="skip"></a>
+<header id="nav">
+<a class="logo" href="#top" aria-label="Impuls Studios"><!-- Place the official logo at assets/logo.png --><img src="assets/logo.png" alt="Impuls Studios" width="150" height="34" onerror="this.outerHTML='<b class=fb>IMPULS<em>STUDIOS</em></b>'"></a>
+<nav data-al="nav"><a href="#top" data-t="n1"></a><a href="#about" data-t="n2"></a><a href="#services" data-t="n3"></a><a href="#work" data-t="n4"></a><a href="#contact" data-t="n5"></a></nav>
+<div class="lg"><button data-l="sq" aria-pressed="true">SQ</button><button data-l="en" aria-pressed="false">EN</button></div>
+<a class="btn sm" data-wa href="https://wa.me/38343814168"><span data-t="cta"></span><i></i></a>
+<button id="bg" aria-expanded="false" aria-controls="menu" data-al="menu"><i></i><i></i></button>
+</header>
+<div id="menu" aria-hidden="true">
+<a class="big" href="#top" data-t="n1"></a><a class="big" href="#about" data-t="n2"></a><a class="big" href="#services" data-t="n3"></a><a class="big" href="#work" data-t="n4"></a><a class="big" href="#contact" data-t="n5"></a>
+<div class="lg"><button data-l="sq" aria-pressed="true">SQ</button><button data-l="en" aria-pressed="false">EN</button></div>
+<a class="btn" data-wa href="https://wa.me/38343814168"><span data-t="cta"></span><i></i></a>
+</div>
+<main>
+<section class="hero" id="top">
+<div>
+<h1 id="h1">Jepni puls biznesit tuaj.</h1>
+<p class="lead" data-t="hp">Strategji kreative, përmbajtje dhe zgjidhje digjitale që i ndihmojnë bizneset të dallohen dhe të rriten.</p>
+<div class="acts"><a class="btn" data-wa href="https://wa.me/38343814168"><span data-t="cta">Flisni me ne</span><i></i></a><a class="lnk" href="#work" data-t="see"></a></div>
+</div>
+<div class="hv" aria-hidden="true">
+<svg viewBox="0 0 400 400" fill="none" stroke="#347FE0" stroke-width="1.3">
+<path d="M10 200H390M200 10V390" stroke="#101B32" stroke-opacity=".1"/>
+<circle class="dr1" pathLength="1" cx="200" cy="200" r="190" style="animation-delay:.3s"/>
+<circle class="dr1" pathLength="1" cx="200" cy="200" r="140" stroke-opacity=".6" style="animation-delay:.6s"/>
+<circle class="dr1" pathLength="1" cx="200" cy="200" r="92" stroke-opacity=".4" style="animation-delay:.9s"/>
+<g class="spin"><circle cx="390" cy="200" r="8" fill="#347FE0" stroke="none"/></g>
+<g class="spin r"><circle cx="200" cy="60" r="5" fill="#101B32" stroke="none"/></g>
+<path class="pl" fill="#347FE0" stroke="none" d="M162 148Q162 128 180 139L262 187Q278 200 262 213L180 261Q162 272 162 252Z"/>
+</svg>
+<span class="fl" style="left:0;top:16%;--k:24">Social</span><span class="fl" style="right:-2%;top:34%;--k:34;animation-delay:-2s">Video</span><span class="fl" style="left:10%;bottom:10%;--k:18;animation-delay:-4s">Web</span><span class="fl" style="right:12%;bottom:2%;--k:28;animation-delay:-1s">Foto</span>
+</div>
+<a class="scr" href="#about"><span></span><em data-t="sc" style="font-style:normal"></em></a>
+</section>
+<div class="tick" aria-hidden="true"><div class="tk" id="tk"></div></div>
+
+<section class="sec about" id="about"><svg class="sym" id="sym" viewBox="0 0 400 400" fill="none" stroke="#347FE0" stroke-width="1.2" aria-hidden="true"><circle cx="200" cy="200" r="190" stroke-opacity=".3"/><path d="M120 70Q120 45 142 58L330 175Q352 200 330 225L142 342Q120 355 120 330Z"/><path d="M150 110Q150 95 163 103L290 180Q303 200 290 220L163 297Q150 305 150 290Z" stroke-dasharray="4 6"/></svg>
+<div class="wrap"><h2 class="mask" data-t="at"></h2>
+<div class="ab"><div><div class="dr"></div><p class="rv" data-t="ap"></p></div></div></div></section>
+
+<section class="sec sheet svcs" id="services"><div class="wrap">
+<div class="sh"><h2 class="mask" data-t="st"></h2><p class="rv" data-t="sp"></p></div>
+<div id="S"></div></div></section>
+
+<section class="sec sheet work" id="work"><div class="wrap">
+<div class="sh"><h2 class="mask" data-t="wt"></h2><p class="rv" data-t="wp"></p></div>
+<div class="grid" id="G"></div></div></section>
+
+<section class="sec sheet ct" id="contact"><div class="orb" aria-hidden="true"></div><div class="wrap">
+<h2 class="mask" data-t="ct"></h2>
+<div class="cg">
+<div class="dir"><p data-t="cp"></p>
+<a class="btn wh" data-wa href="https://wa.me/38343814168"><span data-t="cta"></span><i></i></a>
+<a class="l" href="mailto:iimpulsstudios@gmail.com">iimpulsstudios@gmail.com</a>
+<a class="l" href="https://www.instagram.com/impuls_studios/" target="_blank" rel="noopener">Instagram @impuls_studios</a>
+<a class="l" data-wa href="https://wa.me/38343814168">+383 43 814 168</a></div>
+<form class="fm" id="f" novalidate aria-labelledby="fh">
+<h3 id="fh" data-t="or"></h3>
+<label><span data-t="fn"></span><input name="name" autocomplete="name" aria-describedby="e1"><small class="er" id="e1"></small></label>
+<label><span data-t="fb"></span><input name="biz" autocomplete="organization"></label>
+<label><span data-t="fp"></span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" aria-describedby="e2"><small class="er" id="e2"></small></label>
+<fieldset><legend data-t="fs"></legend><div id="ck" style="display:contents"></div></fieldset>
+<label><span data-t="fm"></span><textarea name="msg" rows="4" aria-describedby="e3"></textarea><small class="er" id="e3"></small></label>
+<input class="hp" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn" type="submit"><span data-t="fx"></span><i></i></button>
+<p id="st" role="status" aria-live="polite"></p>
+</form></div>
+<div class="ft"><span>© <span id="yr"></span> Impuls Studios. <span data-t="ft"></span></span><span>Kosovë</span></div>
+</div></section>
+</main>
+<div id="idx" aria-hidden="true"></div>
+<dialog id="D" aria-label="Project"><div class="dw"><button class="x" id="X" data-al="close">×</button><div class="mb" id="M"></div></div></dialog>
+
+<script>
+/* ============ EDIT HERE: contact, form, portfolio, texts ============ */
+const CFG={wa:'38343814168',form:'' /* paste your Formspree endpoint, e.g. https://formspree.io/f/xxxxxxx */};
+/* Portfolio: add real work only. Entries without title and media stay hidden.
+   {t:{sq:'',en:''},c:{sq:'',en:''},d:{sq:'',en:''},img:['assets/work/a.jpg','assets/work/b.jpg'],video:'assets/work/a.mp4',client:''} */
+const P=[];
+/* Service list: [title SQ, title EN, description SQ, description EN] */
+const SV=[
+['Menaxhim i Rrjeteve Sociale','Social Media Management','Menaxhim i prezencës suaj në rrjetet sociale, me planifikim të përmbajtjes dhe komunikim të përshtatur për markën dhe audiencën tuaj.','Manage your social media presence with planned content and communication tailored to your brand and audience.'],
+['Reklamim Digjital','Paid Advertising','Fushata reklamuese të planifikuara sipas objektivave të biznesit, për të arritur audiencat përkatëse dhe për të përmirësuar përdorimin e buxhetit reklamues.','Advertising campaigns planned around your business objectives to reach relevant audiences and make better use of your advertising budget.'],
+['Video dhe Montazh','Video Production and Editing','Krijim dhe montazh i videove për rrjete sociale, promovime dhe prezantim të produkteve apo shërbimeve tuaja.','Video creation and editing for social media, promotions and the presentation of your products or services.'],
+['Dizajn dhe Zhvillim i Uebfaqeve','Website Design and Development','Uebfaqe moderne, të përshtatshme për pajisje mobile dhe të ndërtuara për ta prezantuar biznesin tuaj në mënyrë profesionale.','Modern, mobile-friendly websites designed to present your business professionally.'],
+['Fotografi','Photography','Fotografi për produkte, biznese dhe përmbajtje promovuese që ndihmojnë markën tuaj të komunikojë në mënyrë vizuale.','Photography for products, businesses and promotional content that helps your brand communicate visually.'],
+['Krijimi dhe Konfigurimi i Llogarive në Rrjete Sociale','Social Media Account Setup','Konfigurim dhe organizim profesional i llogarive në rrjetet sociale, me informacione, identitet vizual dhe elemente bazë të prezencës së biznesit tuaj.','Professional setup of social media accounts, including business information, visual identity and the essential elements of your online presence.']];
+const T={
+sq:{title:'Impuls Studios — Agjenci kreative e marketingut në Kosovë',skip:'Kalo te përmbajtja',n1:'Ballina',n2:'Rreth Nesh',n3:'Shërbimet',n4:'Projektet',n5:'Kontakt',nav:'Navigimi kryesor',menu:'Menyja',cta:'Flisni me ne',
+h:'Jepni *puls* biznesit tuaj.',hp:'Strategji kreative, përmbajtje dhe zgjidhje digjitale që i ndihmojnë bizneset të dallohen dhe të rriten.',see:'Shiko punët',sc:'Rrëshqit',
+at:'Kreativitet me qëllim.',ap:'Impuls Studios është një agjenci kreative e marketingut që ndihmon bizneset të prezantohen më mirë, të komunikojnë me audiencën e tyre dhe të ndërtojnë një prezencë më të fortë digjitale. Ne kombinojmë idetë kreative me zgjidhje praktike, të përshtatura sipas nevojave dhe objektivave të secilit biznes.',
+st:'Çfarë mund të bëjmë për biznesin tuaj?',sp:'Çdo biznes ka nevoja të ndryshme. Ne ofrojmë shërbime kreative dhe digjitale që ju ndihmojnë të prezantoheni më mirë, të arrini audiencën tuaj dhe të krijoni mundësi të reja.',
+wt:'Punët tona. Idetë në veprim.',wp:'Çdo projekt fillon me një ide. Këtu prezantojmë punët që tregojnë mënyrën se si i kthejmë idetë në përmbajtje dhe zgjidhje kreative.',
+we:'Portfolioja po përgatitet. Na shkruani për të biseduar për projektin tuaj.',view:'Shiko projektin',close:'Mbyll',prev:'Para',next:'Pas',
+ct:'Keni një ide? Le t’i japim puls.',cp:'Na tregoni çfarë dëshironi të arrini. Do të bisedojmë për nevojat e biznesit tuaj dhe për mënyrën se si mund t’ju ndihmojmë.',or:'Ose dërgoni një kërkesë me email',
+fn:'Emri',fb:'Emri i biznesit',fp:'Telefoni ose WhatsApp',fs:'Shërbimet që ju interesojnë',fm:'Përshkrimi i projektit',fx:'Dërgo kërkesën',
+e1:'Shkruani emrin tuaj.',e2:'Shkruani një numër të vlefshëm.',e3:'Përshkruani shkurtimisht projektin (të paktën 10 shkronja).',
+cfg:'Forma nuk është konfiguruar ende. Na shkruani në WhatsApp ose në iimpulsstudios@gmail.com.',net:'Dërgimi dështoi. Provoni përsëri ose na shkruani në WhatsApp.',ok:'Faleminderit! Kërkesa u dërgua.',ft:'Të gjitha të drejtat e rezervuara.',
+wa:'Përshëndetje Impuls Studios! Do të doja të bisedonim për shërbimet tuaja.'},
+en:{title:'Impuls Studios — Creative marketing agency in Kosovo',skip:'Skip to content',n1:'Home',n2:'About',n3:'Services',n4:'Projects',n5:'Contact',nav:'Main navigation',menu:'Menu',cta:'Let’s Talk',
+h:'Give Your Business a *Pulse.*',hp:'Creative strategy, content and digital solutions that help businesses stand out and grow.',see:'See our work',sc:'Scroll',
+at:'Creativity With Purpose.',ap:'Impuls Studios is a creative marketing agency that helps businesses present themselves better, communicate with their audiences and build a stronger digital presence. We combine creative ideas with practical solutions tailored to each business’s needs and goals.',
+st:'What Can We Do for Your Business?',sp:'Every business has different needs. We offer creative and digital services that help you present your brand better, reach your audience and create new opportunities.',
+wt:'Our Work. Ideas in Action.',wp:'Every project begins with an idea. Explore work that shows how we turn ideas into creative content and solutions.',
+we:'Our portfolio is being prepared. Message us to talk about your project.',view:'View project',close:'Close',prev:'Previous',next:'Next',
+ct:'Have an Idea? Let’s Give It a Pulse.',cp:'Tell us what you want to achieve. We’ll discuss your business needs and explore how we can help.',or:'Or send an email inquiry',
+fn:'Name',fb:'Business name',fp:'Phone or WhatsApp number',fs:'Services you’re interested in',fm:'Project description',fx:'Send inquiry',
+e1:'Enter your name.',e2:'Enter a valid phone number.',e3:'Briefly describe your project (at least 10 characters).',
+cfg:'The form is not configured yet. Message us on WhatsApp or at iimpulsstudios@gmail.com.',net:'Sending failed. Try again or message us on WhatsApp.',ok:'Thank you! Your inquiry was sent.',ft:'All rights reserved.',
+wa:'Hello Impuls Studios! I’d like to discuss your services.'}};
+/* ====================================================================== */
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+let lang='sq',op=0,LIST=[],cu=0,si=0;
+try{if(localStorage.ilang==='en')lang='en'}catch(e){}
+if(/[?&]demo/.test(location.search))for(let i=1;i<4;i++)P.push({demo:1,t:{sq:'Projekt demo '+i,en:'Demo project '+i},c:{sq:'Vetëm për zhvillim',en:'Development only'},d:{sq:'Ky është shembull demo, jo punë reale.',en:'This is a demo placeholder, not real work.'}});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+const obs=()=>$$('.mask:not(.in),.rv:not(.in),.dr:not(.in)').forEach(n=>io.observe(n));
+function hero(s){const h=$('#h1');h.innerHTML=s.split(' ').map((w,i)=>{const m=w[0]=='*';return `<span class="w"><i style="--d:${i}"${m?' class="em"':''}>${w.replace(/\*/g,'')}</i></span>`}).join(' ');
+document.body.classList.remove('go');void h.offsetWidth;requestAnimationFrame(()=>document.body.classList.add('go'))}
+const li=()=>lang=='sq'?0:1;
+function rs(){const L=li();$('#S').innerHTML=SV.map((s,i)=>`<article class="svc rv${i==op?' open':''}"><h3><button aria-expanded="${i==op}" aria-controls="p${i}" data-i="${i}"><b>0${i+1}</b><span>${s[L]}</span><u aria-hidden="true"></u></button></h3><div class="pn" id="p${i}"><div><p>${s[L+2]}</p></div></div></article>`).join('');
+const t=SV.map(s=>`<span>${s[L]}</span>`).join('');$('#tk').innerHTML=t+t;
+const f=$('#f'),ck=new Set($$('[name=svc]:checked').map(x=>+x.value));$('#ck').innerHTML=SV.map((s,i)=>`<label class="ck"><input type="checkbox" name="svc" value="${i}"${ck.has(i)?' checked':''}><span>${s[L]}</span></label>`).join('')}
+function rw(){const l=lang,L=T[l];LIST=P.filter(p=>p.t&&p.t.sq&&((p.img&&p.img.length)||p.video||p.demo));
+$('#G').innerHTML=LIST.length?LIST.map((p,i)=>`<button class="pj rv" data-i="${i}" data-cur="${L.view}"><div class="im">${p.img&&p.img[0]?`<img src="${p.img[0]}" alt="${p.t[l]||p.t.sq}" loading="lazy" width="800" height="1000">`:'<div class="ph"></div>'}${p.demo?'<em class="dm">DEMO</em>':''}</div><b>${String(i+1).padStart(2,'0')}</b><h3>${p.t[l]||p.t.sq}</h3><small>${(p.c&&(p.c[l]||p.c.sq))||''}</small></button>`).join(''):`<div class="empty"><p>${L.we}</p><a class="btn" data-wa href="#"><span>${L.cta}</span><i></i></a></div>`}
+function ix(){$('#idx').textContent=`0${si+1} / 05 — ${T[lang]['n'+(si+1)]}`;$$('#nav nav a').forEach((a,j)=>a.classList.toggle('on',j==si))}
+function setLang(l){lang=l;const L=T[l];try{localStorage.ilang=l}catch(e){}
+document.documentElement.lang=l;hero(L.h);rs();rw();
+$$('[data-t]').forEach(n=>n.textContent=L[n.dataset.t]);$$('[data-al]').forEach(n=>n.setAttribute('aria-label',L[n.dataset.al]));
+$$('[data-l]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l==l));
+$$('[data-wa]').forEach(a=>a.href='https://wa.me/'+CFG.wa+'?text='+encodeURIComponent(L.wa));
+document.title=L.title;$('meta[name=description]').content=L.hp;$('meta[property="og:title"]').content=L.title;$('meta[property="og:description"]').content=L.hp;
+$('#yr').textContent=new Date().getFullYear();ix();obs()}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-l]');if(b)setLang(b.dataset.l)});
+$('#S').onclick=e=>{const b=e.target.closest('button');if(!b)return;const i=+b.dataset.i;op=op==i?-1:i;$$('.svc').forEach((a,j)=>{a.classList.toggle('open',j==op);a.querySelector('button').setAttribute('aria-expanded',j==op)})};
+/* project viewer */
+const D=$('#D');
+function show(i){cu=(i+LIST.length)%LIST.length;const p=LIST[cu],l=lang,L=T[l],im=p.img||[];
+const media=p.video?`<video controls preload="none" src="${p.video}"${im[0]?` poster="${im[0]}"`:''}></video>`:im[0]?`<img id="mi" src="${im[0]}" alt="${p.t[l]||p.t.sq}">`:'<div class="ph"></div>';
+$('#M').innerHTML=`<div class="mm">${media}${im.length>1?`<div class="ths">${im.map(s=>`<button class="th" data-s="${s}" aria-label="${L.view}"><img src="${s}" alt="" loading="lazy"></button>`).join('')}</div>`:''}</div><div class="mt"><small>${(p.c&&(p.c[l]||p.c.sq))||''}</small><h3>${p.t[l]||p.t.sq}</h3><p>${(p.d&&(p.d[l]||p.d.sq))||''}</p>${p.client?`<p><small>${p.client}</small></p>`:''}<div class="ctl"><button class="btn sm" id="pv"><span>${L.prev}</span></button><button class="btn sm" id="nx"><span>${L.next}</span><i></i></button></div></div>`;
+$('#pv').onclick=()=>show(cu-1);$('#nx').onclick=()=>show(cu+1);D.setAttribute('aria-label',p.t[l]||p.t.sq)}
+$('#G').onclick=e=>{const b=e.target.closest('.pj');if(b){show(+b.dataset.i);D.showModal()}};
+D.onclick=e=>{if(e.target===D)D.close();const t=e.target.closest('.th');if(t&&$('#mi'))$('#mi').src=t.dataset.s};
+$('#X').onclick=()=>D.close();
+D.onkeydown=e=>{if(e.key=='ArrowRight')show(cu+1);if(e.key=='ArrowLeft')show(cu-1)};
+/* menu */
+const mn=$('#menu'),bg=$('#bg');
+function tm(o){mn.classList.toggle('o',o);bg.setAttribute('aria-expanded',o);mn.setAttribute('aria-hidden',!o);document.body.style.overflow=o?'hidden':''}
+bg.onclick=()=>tm(!mn.classList.contains('o'));mn.onclick=e=>{if(e.target.closest('a'))tm(false)};addEventListener('keydown',e=>{if(e.key=='Escape')tm(false)});
+/* scroll */
+let raf=0;const nav=$('#nav'),rail=$('#rail'),sym=$('#sym');
+addEventListener('scroll',()=>{if(raf)return;raf=requestAnimationFrame(()=>{raf=0;const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;nav.classList.toggle('sc',y>40);rail.style.transform=`scaleY(${h>0?y/h:0})`;if(!RM)sym.style.transform=`rotate(${y*.1}deg)`})},{passive:true});
+const secs=$$('main>section'),so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){si=secs.indexOf(e.target);ix()}}),{rootMargin:'-45% 0px -50% 0px'});secs.forEach(s=>so.observe(s));
+/* pointer: hero parallax + cursor label (fine pointers only) */
+if(!RM&&matchMedia('(hover:hover) and (pointer:fine)').matches){const hs=$('.hero'),c=$('#cur');
+hs.addEventListener('pointermove',e=>{const r=hs.getBoundingClientRect();hs.style.setProperty('--mx',(e.clientX-r.left)/r.width*2-1);hs.style.setProperty('--my',(e.clientY-r.top)/r.height*2-1)});
+addEventListener('pointermove',e=>{c.style.transform=`translate(${e.clientX}px,${e.clientY}px)`;c.classList.add('v');const t=e.target.closest&&e.target.closest('[data-cur]');c.classList.toggle('on',!!t);if(t)c.firstChild.textContent=t.dataset.cur})}
+/* form */
+const f=$('#f'),st=$('#st'),say=(m,c)=>{st.textContent=m;st.className=c};
+f.onsubmit=async e=>{e.preventDefault();const L=T[lang];say('','');let ok=true;
+[['name',v=>v.trim().length>1,'e1'],['phone',v=>/^\+?[\d\s()-]{7,}$/.test(v.trim()),'e2'],['msg',v=>v.trim().length>9,'e3']].forEach(([n,t,k])=>{const el=f.elements[n],bad=!t(el.value);el.setAttribute('aria-invalid',bad);$('#'+k).textContent=bad?L[k]:'';ok=ok&&!bad});
+if(!ok)return f.querySelector('[aria-invalid=true]').focus();
+if(f.elements.hp.value)return;
+if(!CFG.form)return say(L.cfg,'err');
+const d={name:f.elements.name.value,business:f.elements.biz.value,phone:f.elements.phone.value,services:$$('[name=svc]:checked').map(c=>SV[c.value][0]).join(', '),message:f.elements.msg.value,_subject:'Impuls Studios — website inquiry'};
+try{const r=await fetch(CFG.form,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(d)});if(!r.ok)throw 0;say(L.ok,'ok');f.reset()}catch(x){say(L.net,'err')}};
+setLang(lang);
+</script>
+</body>
+</html>
