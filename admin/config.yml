@@ -148,6 +148,16 @@ collections:
                       - { label: Home link, name: home, widget: string }
                       - { label: Page title, name: metaTitle, widget: string }
                       - { label: Page description, name: metaDescription, widget: text }
+                  - label: Thank-you page
+                    name: thankYou
+                    widget: object
+                    fields:
+                      - { label: Eyebrow, name: kicker, widget: string }
+                      - { label: Heading, name: title, widget: string }
+                      - { label: Message, name: description, widget: text }
+                      - { label: Home link, name: home, widget: string }
+                      - { label: Page title, name: metaTitle, widget: string }
+                      - { label: Page description, name: metaDescription, widget: text }
                   - { label: WhatsApp prefilled message, name: whatsappMessage, widget: string }
                   - label: Services
                     name: serviceItems
@@ -271,6 +281,16 @@ collections:
                     fields:
                       - { label: Heading, name: title, widget: string }
                       - { label: Description, name: description, widget: text }
+                      - { label: Home link, name: home, widget: string }
+                      - { label: Page title, name: metaTitle, widget: string }
+                      - { label: Page description, name: metaDescription, widget: text }
+                  - label: Thank-you page
+                    name: thankYou
+                    widget: object
+                    fields:
+                      - { label: Eyebrow, name: kicker, widget: string }
+                      - { label: Heading, name: title, widget: string }
+                      - { label: Message, name: description, widget: text }
                       - { label: Home link, name: home, widget: string }
                       - { label: Page title, name: metaTitle, widget: string }
                       - { label: Page description, name: metaDescription, widget: text }

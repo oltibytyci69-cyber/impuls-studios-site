@@ -12,6 +12,7 @@ A lightweight bilingual website for Impuls Studios. The public site is static HT
 - A Netlify Forms contact form with required-field validation, multiple service selection and a honeypot.
 - A Decap CMS at `/admin/` for editing content and managing project media.
 - A privacy notice, a custom 404 page and basic crawler/security headers.
+- A bilingual thank-you page used as the contact form's successful POST destination.
 
 ## Important launch items
 

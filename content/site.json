@@ -103,6 +103,14 @@
         "metaTitle": "Faqja nuk u gjet — Impuls Studios",
         "metaDescription": "Faqja nuk u gjet — Impuls Studios."
       },
+      "thankYou": {
+        "kicker": "KËRKESA U DËRGUA",
+        "title": "Faleminderit që na shkruat.",
+        "description": "Mesazhin tuaj e morëm. Ekipi ynë do ta shqyrtojë dhe do t'ju kontaktojë.",
+        "home": "Kthehu në faqen kryesore",
+        "metaTitle": "Faleminderit — Impuls Studios",
+        "metaDescription": "Faleminderit që kontaktuat Impuls Studios."
+      },
       "whatsappMessage": "Përshëndetje Impuls Studios! Do të doja të bisedonim për shërbimet tuaja.",
       "serviceItems": [
         {
@@ -231,6 +239,14 @@
         "home": "Back to the home page",
         "metaTitle": "Page not found — Impuls Studios",
         "metaDescription": "Page not found — Impuls Studios."
+      },
+      "thankYou": {
+        "kicker": "INQUIRY SENT",
+        "title": "Thanks for getting in touch.",
+        "description": "We've received your message. Our team will review it and get back to you.",
+        "home": "Back to the home page",
+        "metaTitle": "Thank you — Impuls Studios",
+        "metaDescription": "Thank you for contacting Impuls Studios."
       },
       "whatsappMessage": "Hello Impuls Studios! I'd like to discuss your services.",
       "serviceItems": [

@@ -288,6 +288,8 @@ function updateNavigation(activeLanguage) {
   document.querySelector(".skip-link").setAttribute("aria-label", copy.nav.skip);
   const pageMetadata = byId("privacy-title")
     ? copy.privacy
+    : byId("thank-you-title")
+      ? copy.thankYou
     : byId("not-found-title")
       ? copy.notFound
       : copy;
@@ -315,6 +317,11 @@ function updateNavigation(activeLanguage) {
     arrow.setAttribute("aria-hidden", "true");
     arrow.textContent = "↗";
     homeLink.append(arrow);
+  }
+  if (byId("thank-you-title")) {
+    setText(byId("thank-you-title"), copy.thankYou.title);
+    setText(byId("thank-you-description"), copy.thankYou.description);
+    setText(byId("thank-you-home").querySelector("[data-copy]"), copy.thankYou.home);
   }
   updateWhatsAppLinks();
   updateContactLinks();
