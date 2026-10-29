@@ -20,7 +20,7 @@ The shared brief arrived without the official logo file, portfolio photographs o
 
 The live Netlify form has been tested: form detection is enabled, the email notification is configured for `iimpulsstudios@gmail.com`, a test submission appears in the Netlify dashboard, and the notification email was confirmed received. The `formDeliveryConfigured` setting is enabled in the published site content. If the form notification, deployment or delivery setup changes, set that flag to `false` until a new test submission and notification have both been verified. Local submission never sends email.
 
-The CMS editor is included, but editing and publishing require a connected Git repository and a supported, securely configured Git Gateway/authentication provider. The example `git-gateway` backend needs to be enabled and verified for the selected hosting account before inviting editors. No credentials or admin accounts are included. Check the current hosting plan and provider documentation for CMS authentication, form notification and submission limits before launch.
+Netlify Identity is enabled for this site, and the admin page includes its login widget. Git Gateway must finish provisioning before Decap CMS can access the connected GitHub repository. Then set Identity registration to invite-only, invite the intended editor from the Netlify Identity users panel, and accept the invitation by email to create a password. Do not share the password or invite link. Verify the invited user can sign in to `/admin/`, load content, and publish an approved edit before relying on the CMS.
 
 There is no production domain yet. A canonical URL and sitemap with absolute production URLs should be added after a domain is selected.
 
@@ -49,7 +49,7 @@ There are no npm dependencies or production compilation step. To preview the not
 3. Use the site's temporary Netlify subdomain initially. Enable form detection for the deploy and trigger a new deploy so Netlify can scan the form markup.
 4. Configure a form email notification with `iimpulsstudios@gmail.com` as the recipient. Submit a test inquiry from the deployed site and verify both the Netlify submission record and email delivery. This site has completed that test.
 5. After the test succeeds, set **Form delivery and email notification tested** to true under the CMS **Brand and contact** settings; leave it false until delivery is confirmed. This prevents a false success state. It is already true in the current production content.
-6. To use the CMS, connect a Git-backed site and enable the supported Git Gateway and authentication workflow for the account. Configure and test editor sign-in and publishing, then invite only authorized editors. The CMS requires write access to the repository.
+6. Netlify Identity and Git Gateway have been enabled for the site. Set Identity registration to invite-only, invite only intended editors, and verify that editor sign-in and publishing work. The CMS requires a Git Gateway connection to the repository.
 7. Configure HTTPS and verify the host's current plan, form spam protections, submission limits, Git Gateway availability and authentication requirements before public launch.
 8. After choosing a custom domain, connect it in the hosting dashboard, wait for its HTTPS certificate, then add a production canonical URL, social preview image, favicon and absolute-URL sitemap.
 
