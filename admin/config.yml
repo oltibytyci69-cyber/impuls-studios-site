@@ -1,0 +1,326 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+media_folder: media
+public_folder: /media
+locale: en
+
+collections:
+  - name: site
+    label: Website content
+    files:
+      - name: site
+        label: Brand, translations and projects
+        file: content/site.json
+        format: json
+        fields:
+          - label: Brand and contact
+            name: brand
+            widget: object
+            fields:
+              - { label: Agency name, name: name, widget: string }
+              - { label: Contact email, name: email, widget: string }
+              - { label: Instagram profile URL, name: instagram, widget: string }
+              - { label: WhatsApp number (international digits only), name: whatsapp, widget: string }
+              - { label: Default language, name: defaultLanguage, widget: select, options: [sq, en] }
+              - { label: Form delivery and email notification tested, name: formDeliveryConfigured, widget: boolean, default: false }
+          - label: Albanian content
+            name: languages
+            widget: object
+            fields:
+              - label: Albanian
+                name: sq
+                widget: object
+                fields:
+                  - { label: Page language code, name: locale, widget: string }
+                  - { label: Page title, name: metaTitle, widget: string }
+                  - { label: Page description, name: metaDescription, widget: text }
+                  - label: Navigation and accessibility
+                    name: nav
+                    widget: object
+                    fields:
+                      - { label: About link, name: about, widget: string }
+                      - { label: Services link, name: services, widget: string }
+                      - { label: Projects link, name: work, widget: string }
+                      - { label: Contact link, name: contact, widget: string }
+                      - { label: Contact button, name: contactCta, widget: string }
+                      - { label: Menu button, name: menu, widget: string }
+                      - { label: Open menu label, name: menuOpen, widget: string }
+                      - { label: Close menu label, name: menuClose, widget: string }
+                      - { label: Language switch label, name: language, widget: string }
+                      - { label: Skip navigation label, name: skip, widget: string }
+                  - label: Home
+                    name: hero
+                    widget: object
+                    fields:
+                      - { label: Eyebrow, name: eyebrow, widget: string }
+                      - { label: Headline (use <br> for a line break), name: title, widget: string }
+                      - { label: Supporting text, name: description, widget: text }
+                      - { label: Button, name: cta, widget: string }
+                      - { label: Scroll link, name: scroll, widget: string }
+                      - { label: Decorative orbit label, name: artTop, widget: string }
+                      - { label: Decorative orbit caption, name: artBottom, widget: string }
+                  - label: About
+                    name: about
+                    widget: object
+                    fields:
+                      - { label: Section label, name: kicker, widget: string }
+                      - { label: Heading (use <br> for a line break), name: title, widget: string }
+                      - { label: About text, name: description, widget: text }
+                      - { label: Short caption, name: note, widget: string }
+                  - label: Services section
+                    name: services
+                    widget: object
+                    fields:
+                      - { label: Section label, name: kicker, widget: string }
+                      - { label: Heading (use <br> for a line break), name: title, widget: string }
+                      - { label: Intro text, name: description, widget: text }
+                      - { label: Service inquiry link, name: inquire, widget: string }
+                  - label: Projects section
+                    name: work
+                    widget: object
+                    fields:
+                      - { label: Section label, name: kicker, widget: string }
+                      - { label: Heading (use <br> for a line break), name: title, widget: string }
+                      - { label: Intro text, name: description, widget: text }
+                      - { label: Empty portfolio heading, name: emptyTitle, widget: string }
+                      - { label: Empty portfolio text, name: emptyDescription, widget: text }
+                      - { label: Empty portfolio link, name: emptyCta, widget: string }
+                      - { label: Project button, name: openProject, widget: string }
+                      - { label: Media button, name: openMedia, widget: string }
+                      - { label: Project label, name: projectBy, widget: string }
+                  - label: Contact
+                    name: contact
+                    widget: object
+                    fields:
+                      - { label: Section label, name: kicker, widget: string }
+                      - { label: Heading (use <br> for a line break), name: title, widget: string }
+                      - { label: Intro text, name: description, widget: text }
+                      - { label: WhatsApp button, name: whatsapp, widget: string }
+                  - label: Contact form
+                    name: form
+                    widget: object
+                    fields:
+                      - { label: Form heading, name: heading, widget: string }
+                      - { label: Name field, name: name, widget: string }
+                      - { label: Business field, name: business, widget: string }
+                      - { label: Phone field, name: phone, widget: string }
+                      - { label: Services field, name: services, widget: string }
+                      - { label: Multiple selection hint, name: chooseAny, widget: string }
+                      - { label: Project description field, name: description, widget: string }
+                      - { label: Submit button, name: submit, widget: string }
+                      - { label: Privacy disclosure, name: privacy, widget: string }
+                      - { label: Privacy link, name: privacyLink, widget: string }
+                      - { label: Required services error, name: requiredServices, widget: string }
+                      - { label: Submitting status, name: submitting, widget: string }
+                      - { label: Success message, name: success, widget: string }
+                      - { label: Failure message, name: error, widget: string }
+                      - { label: Local setup notice, name: configuration, widget: string }
+                  - label: Footer
+                    name: footer
+                    widget: object
+                    fields:
+                      - { label: Footer caption, name: tagline, widget: string }
+                      - { label: Back to top link, name: backToTop, widget: string }
+                      - { label: Privacy link, name: privacy, widget: string }
+                      - { label: Instagram link, name: instagram, widget: string }
+                      - { label: WhatsApp link, name: whatsapp, widget: string }
+                  - label: Privacy notice
+                    name: privacy
+                    widget: object
+                    fields:
+                      - { label: Page title, name: metaTitle, widget: string }
+                      - { label: Page description, name: metaDescription, widget: text }
+                      - { label: Privacy page heading, name: title, widget: string }
+                      - { label: Introduction, name: intro, widget: text }
+                      - { label: Submitted information, name: submitted, widget: text }
+                      - { label: Storage details, name: storage, widget: text }
+                      - { label: Cookie notice, name: cookies, widget: text }
+                      - { label: Privacy requests, name: rights, widget: text }
+                  - label: Not-found page
+                    name: notFound
+                    widget: object
+                    fields:
+                      - { label: Heading, name: title, widget: string }
+                      - { label: Description, name: description, widget: text }
+                      - { label: Home link, name: home, widget: string }
+                      - { label: Page title, name: metaTitle, widget: string }
+                      - { label: Page description, name: metaDescription, widget: text }
+                  - { label: WhatsApp prefilled message, name: whatsappMessage, widget: string }
+                  - label: Services
+                    name: serviceItems
+                    widget: list
+                    fields:
+                      - { label: Permanent ID (do not change once used), name: id, widget: string }
+                      - { label: Service title, name: title, widget: string }
+                      - { label: Service description, name: description, widget: text }
+              - label: English
+                name: en
+                widget: object
+                fields:
+                  - { label: Page language code, name: locale, widget: string }
+                  - { label: Page title, name: metaTitle, widget: string }
+                  - { label: Page description, name: metaDescription, widget: text }
+                  - label: Navigation and accessibility
+                    name: nav
+                    widget: object
+                    fields:
+                      - { label: About link, name: about, widget: string }
+                      - { label: Services link, name: services, widget: string }
+                      - { label: Projects link, name: work, widget: string }
+                      - { label: Contact link, name: contact, widget: string }
+                      - { label: Contact button, name: contactCta, widget: string }
+                      - { label: Menu button, name: menu, widget: string }
+                      - { label: Open menu label, name: menuOpen, widget: string }
+                      - { label: Close menu label, name: menuClose, widget: string }
+                      - { label: Language switch label, name: language, widget: string }
+                      - { label: Skip navigation label, name: skip, widget: string }
+                  - label: Home
+                    name: hero
+                    widget: object
+                    fields:
+                      - { label: Eyebrow, name: eyebrow, widget: string }
+                      - { label: Headline (use <br> for a line break), name: title, widget: string }
+                      - { label: Supporting text, name: description, widget: text }
+                      - { label: Button, name: cta, widget: string }
+                      - { label: Scroll link, name: scroll, widget: string }
+                      - { label: Decorative orbit label, name: artTop, widget: string }
+                      - { label: Decorative orbit caption, name: artBottom, widget: string }
+                  - label: About
+                    name: about
+                    widget: object
+                    fields:
+                      - { label: Section label, name: kicker, widget: string }
+                      - { label: Heading (use <br> for a line break), name: title, widget: string }
+                      - { label: About text, name: description, widget: text }
+                      - { label: Short caption, name: note, widget: string }
+                  - label: Services section
+                    name: services
+                    widget: object
+                    fields:
+                      - { label: Section label, name: kicker, widget: string }
+                      - { label: Heading (use <br> for a line break), name: title, widget: string }
+                      - { label: Intro text, name: description, widget: text }
+                      - { label: Service inquiry link, name: inquire, widget: string }
+                  - label: Projects section
+                    name: work
+                    widget: object
+                    fields:
+                      - { label: Section label, name: kicker, widget: string }
+                      - { label: Heading (use <br> for a line break), name: title, widget: string }
+                      - { label: Intro text, name: description, widget: text }
+                      - { label: Empty portfolio heading, name: emptyTitle, widget: string }
+                      - { label: Empty portfolio text, name: emptyDescription, widget: text }
+                      - { label: Empty portfolio link, name: emptyCta, widget: string }
+                      - { label: Project button, name: openProject, widget: string }
+                      - { label: Media button, name: openMedia, widget: string }
+                      - { label: Project label, name: projectBy, widget: string }
+                  - label: Contact
+                    name: contact
+                    widget: object
+                    fields:
+                      - { label: Section label, name: kicker, widget: string }
+                      - { label: Heading (use <br> for a line break), name: title, widget: string }
+                      - { label: Intro text, name: description, widget: text }
+                      - { label: WhatsApp button, name: whatsapp, widget: string }
+                  - label: Contact form
+                    name: form
+                    widget: object
+                    fields:
+                      - { label: Form heading, name: heading, widget: string }
+                      - { label: Name field, name: name, widget: string }
+                      - { label: Business field, name: business, widget: string }
+                      - { label: Phone field, name: phone, widget: string }
+                      - { label: Services field, name: services, widget: string }
+                      - { label: Multiple selection hint, name: chooseAny, widget: string }
+                      - { label: Project description field, name: description, widget: string }
+                      - { label: Submit button, name: submit, widget: string }
+                      - { label: Privacy disclosure, name: privacy, widget: string }
+                      - { label: Privacy link, name: privacyLink, widget: string }
+                      - { label: Required services error, name: requiredServices, widget: string }
+                      - { label: Submitting status, name: submitting, widget: string }
+                      - { label: Success message, name: success, widget: string }
+                      - { label: Failure message, name: error, widget: string }
+                      - { label: Local setup notice, name: configuration, widget: string }
+                  - label: Footer
+                    name: footer
+                    widget: object
+                    fields:
+                      - { label: Footer caption, name: tagline, widget: string }
+                      - { label: Back to top link, name: backToTop, widget: string }
+                      - { label: Privacy link, name: privacy, widget: string }
+                      - { label: Instagram link, name: instagram, widget: string }
+                      - { label: WhatsApp link, name: whatsapp, widget: string }
+                  - label: Privacy notice
+                    name: privacy
+                    widget: object
+                    fields:
+                      - { label: Page title, name: metaTitle, widget: string }
+                      - { label: Page description, name: metaDescription, widget: text }
+                      - { label: Privacy page heading, name: title, widget: string }
+                      - { label: Introduction, name: intro, widget: text }
+                      - { label: Submitted information, name: submitted, widget: text }
+                      - { label: Storage details, name: storage, widget: text }
+                      - { label: Cookie notice, name: cookies, widget: text }
+                      - { label: Privacy requests, name: rights, widget: text }
+                  - label: Not-found page
+                    name: notFound
+                    widget: object
+                    fields:
+                      - { label: Heading, name: title, widget: string }
+                      - { label: Description, name: description, widget: text }
+                      - { label: Home link, name: home, widget: string }
+                      - { label: Page title, name: metaTitle, widget: string }
+                      - { label: Page description, name: metaDescription, widget: text }
+                  - { label: WhatsApp prefilled message, name: whatsappMessage, widget: string }
+                  - label: Services
+                    name: serviceItems
+                    widget: list
+                    fields:
+                      - { label: Permanent ID (do not change once used), name: id, widget: string }
+                      - { label: Service title, name: title, widget: string }
+                      - { label: Service description, name: description, widget: text }
+          - label: Projects
+            name: projects
+            widget: list
+            summary: "{{fields.title.sq}} — {{fields.category.sq}}"
+            fields:
+              - { label: Publish this project, name: published, widget: boolean, default: false }
+              - label: Project title
+                name: title
+                widget: object
+                fields:
+                  - { label: Albanian, name: sq, widget: string }
+                  - { label: English, name: en, widget: string }
+              - label: Category
+                name: category
+                widget: object
+                fields:
+                  - { label: Albanian, name: sq, widget: string }
+                  - { label: English, name: en, widget: string }
+              - { label: Client name (only with permission), name: client, widget: string, required: false }
+              - label: Description
+                name: description
+                widget: object
+                fields:
+                  - { label: Albanian, name: sq, widget: text }
+                  - { label: English, name: en, widget: text }
+              - { label: Cover image path, name: cover, widget: image, required: false }
+              - label: Cover image alt text
+                name: alt
+                widget: object
+                fields:
+                  - { label: Albanian, name: sq, widget: string }
+                  - { label: English, name: en, widget: string }
+              - label: Additional project media
+                name: media
+                widget: list
+                required: false
+                fields:
+                  - { label: Media type, name: type, widget: select, options: [image, video] }
+                  - { label: Uploaded image or video file, name: src, widget: file, required: false }
+                  - { label: External video URL (optional), name: url, widget: string, required: false }
+                  - { label: Alternative text (images), name: alt, widget: string, required: false }
+                  - { label: Video MIME type (optional), name: mimeType, widget: string, required: false }

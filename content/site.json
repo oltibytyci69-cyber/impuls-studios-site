@@ -1,0 +1,271 @@
+{
+  "brand": {
+    "name": "Impuls Studios",
+    "email": "iimpulsstudios@gmail.com",
+    "instagram": "https://www.instagram.com/impuls_studios/",
+    "whatsapp": "38343814168",
+    "defaultLanguage": "sq",
+    "formDeliveryConfigured": false
+  },
+  "languages": {
+    "sq": {
+      "locale": "sq-XK",
+      "metaTitle": "Impuls Studios — Jepni puls biznesit tuaj.",
+      "metaDescription": "Strategji kreative, përmbajtje dhe zgjidhje digjitale për bizneset që duan të komunikojnë më mirë.",
+      "nav": {
+        "about": "Rreth nesh",
+        "services": "Shërbimet",
+        "work": "Projektet",
+        "contact": "Kontakti",
+        "contactCta": "Flisni me ne",
+        "menu": "Menu",
+        "menuOpen": "Hap navigimin",
+        "menuClose": "Mbyll navigimin",
+        "language": "Zgjidh gjuhën",
+        "skip": "Kalo te përmbajtja"
+      },
+      "hero": {
+        "eyebrow": "STUDIO KREATIVE · KOSOVË",
+        "title": "Jepni puls<br>biznesit tuaj",
+        "description": "Strategji kreative, përmbajtje dhe zgjidhje digjitale që i ndihmojnë bizneset të dallohen dhe të rriten.",
+        "cta": "Flisni me ne",
+        "scroll": "ZBULO STUDIO-N",
+        "artTop": "IDE → NDIKIM",
+        "artBottom": "KREATIVITET NË LËVIZJE"
+      },
+      "about": {
+        "kicker": "RRETH NESH",
+        "title": "Kreativitet<br>me qëllim",
+        "description": "Impuls Studios është një agjenci kreative e marketingut që ndihmon bizneset të prezantohen më mirë, të komunikojnë me audiencën e tyre dhe të ndërtojnë një prezencë më të fortë digjitale. Ne kombinojmë idetë kreative me zgjidhje praktike, të përshtatura sipas nevojave dhe objektivave të secilit biznes.",
+        "note": "MENDIM I QARTË. PUNË ME QËLLIM."
+      },
+      "services": {
+        "kicker": "SHËRBIMET",
+        "title": "Çfarë mund të bëjmë<br>për biznesin tuaj?",
+        "description": "Çdo biznes ka nevoja të ndryshme. Ne ofrojmë shërbime kreative dhe digjitale që ju ndihmojnë të prezantoheni më mirë, të arrini audiencën tuaj dhe të krijoni mundësi të reja.",
+        "inquire": "Pyetni për këtë shërbim"
+      },
+      "work": {
+        "kicker": "PUNËT TONA",
+        "title": "Punët tona.<br>Idetë në veprim",
+        "description": "Çdo projekt fillon me një ide. Këtu prezantojmë punët që tregojnë mënyrën se si i kthejmë idetë në përmbajtje dhe zgjidhje kreative.",
+        "emptyTitle": "Punët e mira po vijnë.",
+        "emptyDescription": "Po përgatisim hapësirën për projektet e radhës. Na kontaktoni dhe fillojmë një ide të re së bashku.",
+        "emptyCta": "Nisni një bisedë",
+        "openProject": "Shiko projektin",
+        "openMedia": "Hap median",
+        "projectBy": "Projekt"
+      },
+      "contact": {
+        "kicker": "KONTAKTI",
+        "title": "Keni një ide?<br>Le t'i japim puls",
+        "description": "Na tregoni çfarë dëshironi të arrini. Do të bisedojmë për nevojat e biznesit tuaj dhe për mënyrën se si mund t'ju ndihmojmë.",
+        "whatsapp": "Na shkruani në WhatsApp"
+      },
+      "form": {
+        "heading": "Ose na dërgoni një kërkesë",
+        "name": "Emri juaj",
+        "business": "Emri i biznesit",
+        "phone": "Telefoni ose WhatsApp",
+        "services": "Shërbimet që ju nevojiten",
+        "chooseAny": "(zgjidhni një ose më shumë)",
+        "description": "Na tregoni shkurt për projektin",
+        "submit": "Dërgoni kërkesën",
+        "privacy": "Të dhënat tuaja përdoren vetëm për t'iu përgjigjur kërkesës suaj.",
+        "privacyLink": "Lexoni privatësinë",
+        "requiredServices": "Zgjidhni të paktën një shërbim.",
+        "submitting": "Duke dërguar kërkesën…",
+        "success": "Faleminderit! Kërkesa juaj u dërgua. Do t'ju përgjigjemi së shpejti.",
+        "error": "Kërkesa nuk u dërgua. Ju lutemi provoni përsëri ose na kontaktoni drejtpërdrejt.",
+        "configuration": "Dërgimi i formularit dhe njoftimet me email nuk janë konfiguruar ende. Për momentin, na shkruani në WhatsApp ose email."
+      },
+      "footer": {
+        "tagline": "Ide kreative. Hap i radhës.",
+        "backToTop": "KTHEHU LART",
+        "privacy": "Privatësia",
+        "instagram": "Instagram",
+        "whatsapp": "WhatsApp"
+      },
+      "privacy": {
+        "metaTitle": "Privatësia — Impuls Studios",
+        "metaDescription": "Informacion mbi privatësinë dhe të dhënat e dërguara përmes formularit të kontaktit të Impuls Studios.",
+        "title": "Privatësia",
+        "intro": "Përdorim vetëm informacionin që na jepni për t'iu përgjigjur kërkesës suaj dhe për të diskutuar shërbimet që kërkoni.",
+        "submitted": "Kur dërgoni formularin e kontaktit, ne marrim emrin, biznesin, numrin e telefonit, shërbimet e përzgjedhura dhe përshkrimin e projektit. Formulari përpunohet nga Netlify. Njoftimet me email duhet të konfigurohen dhe testohen nga administratori i faqes. Mund të na kontaktoni drejtpërdrejt në iimpulsstudios@gmail.com.",
+        "storage": "Kërkesa mund të ruhet në panelin e Netlify dhe në emailin e agjencisë. Afati i ruajtjes dhe qasja në të dhëna menaxhohen nga administratori i faqes sipas nevojës dhe cilësimeve të llogarisë.",
+        "cookies": "Kjo faqe nuk shton analitikë, reklama apo cookie jo thelbësore. Shkronjat ngarkohen nga Google Fonts, ndaj shfletuesi lidhet me atë shërbim për t'i marrë.",
+        "rights": "Për të kërkuar qasje, korrigjim ose fshirje të informacionit tuaj, na shkruani në adresën e emailit më sipër."
+      },
+      "notFound": {
+        "title": "Kjo faqe nuk u gjet.",
+        "description": "Adresa mund të jetë ndryshuar. Kthehuni te faqja kryesore dhe vazhdoni prej aty.",
+        "home": "Kthehu te faqja kryesore",
+        "metaTitle": "Faqja nuk u gjet — Impuls Studios",
+        "metaDescription": "Faqja nuk u gjet — Impuls Studios."
+      },
+      "whatsappMessage": "Përshëndetje Impuls Studios! Do të doja të bisedonim për shërbimet tuaja.",
+      "serviceItems": [
+        {
+          "id": "social-media-management",
+          "title": "Menaxhim i Rrjeteve Sociale",
+          "description": "Menaxhim i prezencës suaj në rrjetet sociale, me planifikim të përmbajtjes dhe komunikim të përshtatur për markën dhe audiencën tuaj."
+        },
+        {
+          "id": "paid-advertising",
+          "title": "Reklamim Digjital",
+          "description": "Fushata reklamuese të planifikuara sipas objektivave të biznesit, për të arritur audiencat përkatëse dhe për të përmirësuar përdorimin e buxhetit reklamues."
+        },
+        {
+          "id": "video-production",
+          "title": "Video dhe Montazh",
+          "description": "Krijim dhe montazh i videove për rrjete sociale, promovime dhe prezantim të produkteve apo shërbimeve tuaja."
+        },
+        {
+          "id": "website-design",
+          "title": "Dizajn dhe Zhvillim i Uebfaqeve",
+          "description": "Uebfaqe moderne, të përshtatshme për pajisje mobile dhe të ndërtuara për ta prezantuar biznesin tuaj në mënyrë profesionale."
+        },
+        {
+          "id": "photography",
+          "title": "Fotografi",
+          "description": "Fotografi për produkte, biznese dhe përmbajtje promovuese që ndihmojnë markën tuaj të komunikojë në mënyrë vizuale."
+        },
+        {
+          "id": "social-account-setup",
+          "title": "Krijimi dhe Konfigurimi i Llogarive në Rrjete Sociale",
+          "description": "Konfigurim dhe organizim profesional i llogarive në rrjetet sociale, me informacione, identitet vizual dhe elemente bazë të prezencës së biznesit tuaj."
+        }
+      ]
+    },
+    "en": {
+      "locale": "en",
+      "metaTitle": "Impuls Studios — Give Your Business a Pulse.",
+      "metaDescription": "Creative strategy, content and digital solutions for businesses ready to communicate better.",
+      "nav": {
+        "about": "About",
+        "services": "Services",
+        "work": "Projects",
+        "contact": "Contact",
+        "contactCta": "Let's talk",
+        "menu": "Menu",
+        "menuOpen": "Open navigation",
+        "menuClose": "Close navigation",
+        "language": "Choose language",
+        "skip": "Skip to content"
+      },
+      "hero": {
+        "eyebrow": "CREATIVE STUDIO · KOSOVO",
+        "title": "Give your<br>business a pulse",
+        "description": "Creative strategy, content and digital solutions that help businesses stand out and grow.",
+        "cta": "Let's talk",
+        "scroll": "EXPLORE THE STUDIO",
+        "artTop": "IDEA → IMPACT",
+        "artBottom": "CREATIVITY IN MOTION"
+      },
+      "about": {
+        "kicker": "ABOUT US",
+        "title": "Creativity<br>with purpose",
+        "description": "Impuls Studios is a creative marketing agency that helps businesses present themselves better, communicate with their audiences and build a stronger digital presence. We combine creative ideas with practical solutions tailored to each business's needs and goals.",
+        "note": "CLEAR THINKING. PURPOSEFUL WORK."
+      },
+      "services": {
+        "kicker": "SERVICES",
+        "title": "What can we do<br>for your business?",
+        "description": "Every business has different needs. We offer creative and digital services that help you present your brand better, reach your audience and create new opportunities.",
+        "inquire": "Ask about this service"
+      },
+      "work": {
+        "kicker": "OUR WORK",
+        "title": "Our work.<br>Ideas in action",
+        "description": "Every project begins with an idea. Explore work that shows how we turn ideas into creative content and solutions.",
+        "emptyTitle": "Good work is on its way.",
+        "emptyDescription": "We're making room for the projects ahead. Get in touch and let's start a new idea together.",
+        "emptyCta": "Start a conversation",
+        "openProject": "View project",
+        "openMedia": "Open media",
+        "projectBy": "Project"
+      },
+      "contact": {
+        "kicker": "CONTACT",
+        "title": "Have an idea?<br>Let's give it a pulse",
+        "description": "Tell us what you want to achieve. We'll discuss your business needs and explore how we can help.",
+        "whatsapp": "Message us on WhatsApp"
+      },
+      "form": {
+        "heading": "Or send us an inquiry",
+        "name": "Your name",
+        "business": "Business name",
+        "phone": "Phone or WhatsApp",
+        "services": "Services you need",
+        "chooseAny": "(choose one or more)",
+        "description": "Tell us briefly about the project",
+        "submit": "Send inquiry",
+        "privacy": "Your information is used only to respond to your inquiry.",
+        "privacyLink": "Read our privacy notice",
+        "requiredServices": "Choose at least one service.",
+        "submitting": "Sending your inquiry…",
+        "success": "Thank you! Your inquiry has been sent. We'll be in touch soon.",
+        "error": "Your inquiry wasn't sent. Please try again or contact us directly.",
+        "configuration": "Form delivery and email notifications are not configured yet. For now, contact us on WhatsApp or by email."
+      },
+      "footer": {
+        "tagline": "Creative ideas. The next step.",
+        "backToTop": "BACK TO TOP",
+        "privacy": "Privacy",
+        "instagram": "Instagram",
+        "whatsapp": "WhatsApp"
+      },
+      "privacy": {
+        "metaTitle": "Privacy — Impuls Studios",
+        "metaDescription": "Information about privacy and the data submitted through the Impuls Studios contact form.",
+        "title": "Privacy",
+        "intro": "We use only the information you provide to respond to your inquiry and discuss the services you requested.",
+        "submitted": "When you submit the contact form, we receive your name, business, phone number, selected services and project description. The form is processed by Netlify. Email notifications must be configured and tested by the site administrator. You can also contact us directly at iimpulsstudios@gmail.com.",
+        "storage": "Your inquiry may be stored in Netlify's dashboard and the agency's email. The agency administrator manages retention and access according to need and account settings.",
+        "cookies": "This site does not add analytics, advertising or non-essential cookies. Font files are loaded from Google Fonts, so your browser connects to that service to retrieve them.",
+        "rights": "To request access to, correction of or deletion of your information, email us at the address above."
+      },
+      "notFound": {
+        "title": "This page wasn't found.",
+        "description": "The address may have changed. Head back to the home page and continue from there.",
+        "home": "Back to the home page",
+        "metaTitle": "Page not found — Impuls Studios",
+        "metaDescription": "Page not found — Impuls Studios."
+      },
+      "whatsappMessage": "Hello Impuls Studios! I'd like to discuss your services.",
+      "serviceItems": [
+        {
+          "id": "social-media-management",
+          "title": "Social Media Management",
+          "description": "Manage your social media presence with planned content and communication tailored to your brand and audience."
+        },
+        {
+          "id": "paid-advertising",
+          "title": "Paid Advertising",
+          "description": "Advertising campaigns planned around your business objectives to reach relevant audiences and make better use of your advertising budget."
+        },
+        {
+          "id": "video-production",
+          "title": "Video Production and Editing",
+          "description": "Video creation and editing for social media, promotions and the presentation of your products or services."
+        },
+        {
+          "id": "website-design",
+          "title": "Website Design and Development",
+          "description": "Modern, mobile-friendly websites designed to present your business professionally."
+        },
+        {
+          "id": "photography",
+          "title": "Photography",
+          "description": "Photography for products, businesses and promotional content that helps your brand communicate visually."
+        },
+        {
+          "id": "social-account-setup",
+          "title": "Social Media Account Setup",
+          "description": "Professional setup of social media accounts, including business information, visual identity and the essential elements of your online presence."
+        }
+      ]
+    }
+  },
+  "projects": []
+}
